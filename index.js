@@ -26,5 +26,6 @@ app.get("/sendmail", asyncHandler(async(request, response)=> {
         subject: "data.subject", // Subject line
         html: "data.html", // html body
       });
+  console.log(info);
   }));
 app.listen(PORT, () => console.log(`The server started in: ${PORT} ✨✨`));
