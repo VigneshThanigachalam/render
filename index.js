@@ -5,7 +5,7 @@ import asyncHandler from "express-async-handler";
 import dotenv from "dotenv";
 const app = express();
 dotenv.config();
-const PORT = 4000;
+const PORT = process.env.PORT;
 app.get("/", function (request, response) {
   response.send("🙋‍♂️, 🌏 🎊✨🤩");
 });
